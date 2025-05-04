@@ -1,12 +1,51 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#A88BC7 ;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+  }
+  
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 
+nav ul li a:hover ,
+nav ul li a.active{
+    background-color: rgb(160, 164, 164);
+    border-radius: 2px;
+    border-bottom: 3px solid black; /* קו תחתון כשהקישור נלחץ */
+    color: black; /* צבע טקסט בשעת ריחוף */
+}
+
+.logo_container{
+   display: flex;
+   align-items: center;
+   margin-right: 30px;
+   margin-left: 30px;
+}
 .logo {
     width: 160px;
     height: auto;
