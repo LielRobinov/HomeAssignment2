@@ -1,0 +1,14 @@
+:root{
+    --heroSectionColor: #e6d8f7;
+}
+
+.hero_section{
+background-color: var(--heroSectionColor) ;
+border-radius: 10px;
+}
+
+.picture{
+    width: 200px;
+    height: auto;
+    
+}
