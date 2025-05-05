@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --Nav_footer_BackgroundColor: #8B9DC3;
+    --Nav_footer_BackgroundColor: #5e76a9;
     --main_BackgroundColor: white;
     --li_BackgroundColor: white;
     --a_BackgroundColor: black;
@@ -132,7 +132,7 @@ footer{
     margin-right: 5px;
 }
 
-body.darkMode {
+body.dm_colors{
     --Nav_footer_BackgroundColor: #2C3E50;
     --main_BackgroundColor: #1A252F;
     --li_BackgroundColor: #34495E;

@@ -10,17 +10,19 @@ function toggleMenu() {
 
 }
 
-function darkMode(){
-    const icon = querySelector("#darkModeIcon");
+function dark_mode(){
+    const icon = document.querySelector("#icon");
 
+    document.body.classList.toggle("dm_colors");
 
-    if(document.body.classList.contains("dark-mode"))
+    if(document.body.classList.contains("dm_colors"))
     {
-        icon.src = "assets/imgs/moon.png"
+        icon.src="assets/imgs/sun.png";
+        icon.alt="sunIcon";
+        
     }
     else{
-        icon.src = "assets/imgs/sun.png"
+        icon.src ="assets/imgs/moon.png";
+        icon.alt="moonIcon";
     }
-    
-
 }
