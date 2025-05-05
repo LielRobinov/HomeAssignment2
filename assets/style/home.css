@@ -1,8 +1,8 @@
 :root{
-    --heroSectionColor: #e6d8f7;
-    --btn_color: #6a5acd;
+    --heroSectionColor: #DFE3EE;
+    --btn_color: #687eb8;
     --fontColor: white;
-    --btnHover: #6960a6 ;
+    --btnHover: #8297c9 ;
 }
 
 .hero_section{
