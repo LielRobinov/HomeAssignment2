@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --Nav_BackgroundColor: #a1abc9;
+    --Nav_footer_BackgroundColor: #8B9DC3;
     --main_BackgroundColor: white;
     --li_BackgroundColor: white;
     --a_BackgroundColor: black;
@@ -20,40 +20,82 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:var(--Nav_BackgroundColor);
+    background-color:var(--Nav_footer_BackgroundColor);
     z-index: 10;
 }
 nav{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center ;
     height: 100px;
+    position: relative;
 }
-  
-nav a {
+
+.nav_links{
     display: flex;
-    gap: 55px;
+    gap: 30px;
+}
+
+.nav_links a {
     list-style: none;
     text-decoration: none;
     color: var(--a_BackgroundColor);
     font-weight: bold;
 }
 
-nav a:hover ,
-nav a.active{
+.nav_links a:hover ,
+.nav_links a.active{
+    text-decoration:underline;
     background-color: var(--li_BackgroundColor);
-    border-radius: 2px;
+    border-radius: 5px;
+    padding: 3px;
 }
 
-.logo_container{
-   display: flex;
-   align-items: center;
-   margin-right: 30px;
-   margin-left: 30px;
-}
 .logo {
+    margin-right: 30px;
+    margin-left: 30px;
     width: 160px;
     height: auto;
+}
+
+.hamburger{
+    background: transparent;
+    display: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 767px){
+    .nav_links{
+        display: none;
+        gap: 30px;
+        background-color: var(--Nav_footer_BackgroundColor);
+        position: absolute;
+        top: 70px;
+        right: 15px;
+        padding: 10px;
+        border: 1px solid;
+    }
+    .nav_links.active{
+        display: flex;
+    }
+
+    .hamburger{
+        display: block;
+        margin-left: auto;
+        margin-right: 15px;
+        border: 3px;
+        display: flex;
+        align-items: start;
+    }
+    .darkModeBtn{
+        display: block;
+        margin-left: 300px;
+        display: flex;
+        align-items: start;
+    }
+
 }
 
 main{
@@ -67,13 +109,36 @@ main{
 }
 
 footer{
-    background-color: var(--Nav_BackgroundColor);
+    background-color: var(--Nav_footer_BackgroundColor);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
 }
 
+.darkModeBtn{
+    background: transparent;
+    border: none;
+  
+}
+  
+.darkModeBtn img {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+body.darkMode {
+    --Nav_footer_BackgroundColor: #2C3E50;
+    --main_BackgroundColor: #1A252F;
+    --li_BackgroundColor: #34495E;
+    --a_BackgroundColor: #ECF0F1;
+    --BG_color: #121212;
+}
 
 
 

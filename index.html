@@ -12,20 +12,30 @@
 <body>
   <header>
       <nav>
-        <div class="logo_container">
-          <img src="assets/imgs/logo3.png" alt="WebsiteLogo" class="logo">
-        </div> 
-          <a href="index.html">Home</a>
+         <img src="assets/imgs/logo3.png" alt="WebsiteLogo" class="logo">
+
+       <div class="nav_links" id="nav_links">
+          <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
           <a href="skills.html">Skills</a>
           <a href="project-Calculator.html">Project Calculator</a>
+        </div>
+
+        <button id="darkMode" class="darkModeBtn" onclick="darkMode()">
+          <img src="assets/imgs/sun.png" alt="sunIcon" id="darkModeIcon">
+        </button>
+
+        <a class="hamburger" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
       </nav>
   </header>
 
   <main>
     <section class="hero_section">
     <div class="text">
-      <h1>Liel Robinov<i class="fa fa-heart"></i></h1>
+      <h1>Liel Robinov</h1>
       <p>Business administration student specializing in Information Systems</p>
       <br/>
       <a href="assets/resume.pdf.pdf" target="_blank">

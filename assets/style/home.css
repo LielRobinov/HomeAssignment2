@@ -1,8 +1,8 @@
 :root{
-    --heroSectionColor: #DFE3EE;
-    --btn_color: #687eb8;
+    --SectionColor: #DFE3EE;
+    --btn_color: #8b9dc3;
     --fontColor: white;
-    --btnHover: #8297c9 ;
+    --btnHover: #94a0ba ;
 }
 
 .hero_section{
@@ -10,7 +10,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 10px;
-background-color: var(--heroSectionColor) ;
+background-color: var(--SectionColor) ;
 border-radius: 10px;
 }
 
@@ -54,7 +54,7 @@ button:hover{
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: var(--heroSectionColor) ;
+    background-color: var(--SectionColor) ;
     border-radius: 10px;
     height: 200px;
     width:300px ;
@@ -63,7 +63,7 @@ button:hover{
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: var(--heroSectionColor) ;
+    background-color: var(--SectionColor) ;
     border-radius: 10px;
     height: 200px;
     width:300px ;
