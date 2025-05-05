@@ -1,14 +1,46 @@
 :root{
     --heroSectionColor: #e6d8f7;
+    --btn_color: #6a5acd;
+    --fontColor: white;
+    --btnHover: #6960a6 ;
 }
 
 .hero_section{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
 background-color: var(--heroSectionColor) ;
 border-radius: 10px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 16px;
+}
+
+.text h1{
+    margin-bottom: 5px;
 }
 
 .picture{
     width: 200px;
     height: auto;
-    
+    display: block;
+    margin-left: auto;
+}
+
+button{
+padding: 5px;
+color:var(--fontColor);
+background-color: var(--btn_color);
+border-radius: 5px;
+font-weight: bold;
+}
+
+button:hover{
+    background-color:var(--btnHover) ;
 }

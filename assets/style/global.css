@@ -31,7 +31,7 @@ nav{
 }
 nav ul {
     display: flex;
-    gap: 50px;
+    gap: 55px;
     list-style: none;
   }
   
@@ -58,10 +58,11 @@ nav ul li a.active{
     height: auto;
 }
 
-.container{
-    max-width: 800px;
+main{
+    width: 620px;
     height: 600px;
     border-radius: 10px;
+    border-style:groove;
     margin: 120px auto ;
     padding: 10px;
     background-color: var(--main_BackgroundColor);
@@ -73,6 +74,28 @@ footer{
     align-items: center;
     justify-content: center;
     height: 100px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .hamburger{
+        display: block;
+    }
+    
 }
 
 
