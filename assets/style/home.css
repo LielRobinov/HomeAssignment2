@@ -44,3 +44,28 @@ font-weight: bold;
 button:hover{
     background-color:var(--btnHover) ;
 }
+
+.CallToAction{
+    display: flex;
+    margin-top: 20px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--heroSectionColor) ;
+    border-radius: 10px;
+    height: 200px;
+    width:300px ;
+}
+.col2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--heroSectionColor) ;
+    border-radius: 10px;
+    height: 200px;
+    width:300px ;
+    margin-left: 10px;
+}
