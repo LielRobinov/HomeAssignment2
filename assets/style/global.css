@@ -26,9 +26,8 @@ header{
 nav{
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content:space-between ;
     height: 100px;
-    position: relative;
 }
 
 .nav_links{
@@ -95,12 +94,11 @@ nav{
         display: flex;
         align-items: start;
     }
-
 }
 
 main{
-    width: 620px;
-    height: 600px;
+    width: 100%;
+    max-width: 620px;
     border-radius: 10px;
     border-style:groove;
     margin: 120px auto ;
@@ -113,13 +111,18 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100px;
+    width: 100%;
+
 }
+footer p {
+    font-size: 16px;
+ }
 
 .darkModeBtn{
     background: transparent;
     border: none;
-  
 }
   
 .darkModeBtn img {

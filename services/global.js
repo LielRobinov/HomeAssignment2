@@ -12,6 +12,7 @@ function toggleMenu() {
 
 function dark_mode(){
     const icon = document.querySelector("#icon");
+    const webLogo = document.querySelector("#logo");
 
     document.body.classList.toggle("dm_colors");
 
@@ -19,10 +20,14 @@ function dark_mode(){
     {
         icon.src="assets/imgs/sun.png";
         icon.alt="sunIcon";
-        
+        webLogo.src="assets/imgs/whiteLogo.png"
+        webLogo.alt="whiteLogo"
+
     }
     else{
         icon.src ="assets/imgs/moon.png";
-        icon.alt="moonIcon";
+        icon.alt="WebsiteWhiteLogo";
+        webLogo.src="assets/imgs/logo3.png"
+        webLogo.alt="WebsiteLogo"
     }
 }
