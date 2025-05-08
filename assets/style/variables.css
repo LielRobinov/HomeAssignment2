@@ -11,4 +11,6 @@
   --fontColor: white;
   --btnHover: #879ac2 ;
   --separation-color: linear-gradient(to right, #3a4795, #7986d2);
+  --reset_btn: red;
+  --submit_btn: green;
 }

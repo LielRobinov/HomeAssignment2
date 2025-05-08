@@ -17,6 +17,10 @@ form{
     margin-bottom: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
 }
+form > label{
+    font-weight: bold;
+
+}
 .price, .remove{
     padding: 5px 5px;
     display: flex;
@@ -28,9 +32,11 @@ form{
 
 .price{
     margin-bottom: 12px;
+    background-color:var(--submit_btn);
+    font-weight: bold;
+}
+.remove{
+    background-color: var(--reset_btn);
+    font-weight: bold;
 }
 
-.price:hover,
-.remove:hover{
-    background-color: var(--Nav_footer_BackgroundColor);
-}
