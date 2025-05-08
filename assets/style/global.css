@@ -1,16 +1,10 @@
+@import url('variables.css');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --Nav_footer_BackgroundColor: #5e76a9;
-    --main_BackgroundColor: white;
-    --li_BackgroundColor: white;
-    --a_BackgroundColor: black;
-    --BG_color: rgb(243, 243, 243);
-}
-
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--BG_color)
@@ -28,75 +22,78 @@ nav{
     align-items: center;
     justify-content:space-between ;
     height: 100px;
-    padding: 0 20px;
 }
 
 .nav_links{
     display: flex;
-    gap: 30px;
 }
 
 .nav_links a {
-    list-style: none;
     text-decoration: none;
     color: var(--a_BackgroundColor);
-    font-weight: bold;
+    margin: 10px 10px;
+    padding: 5px 5px;
+
 }
 
 .nav_links a:hover ,
 .nav_links a.active{
-    text-decoration:underline;
     background-color: var(--li_BackgroundColor);
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px 5px;
+    margin: 10px 10px;
+    width: 50px;
 }
 
 .logo {
-    margin-right: 30px;
-    margin-left: 30px;
     width: 160px;
-    height: auto;
+}
+
+.menu_icons{
+    display: flex;
+    gap: 10px
 }
 
 .hamburger{
-    background: transparent;
     display: none;
     border: none;
     cursor: pointer;
     font-size: 25px;
 }
-.menu_icons{
-    display: flex;
-}
 
 @media only screen and (max-width: 767px){
     .nav_links{
         display: none;
-        gap: 30px;
+        flex-direction: column;
         background-color: var(--Nav_footer_BackgroundColor);
-        position: absolute;
-        top: 70px;
-        right: 15px;
+        position: fixed;
+        top:100px ;
+        right:0px;
         padding: 10px;
+        border-radius: 2px;
         border: 1px solid;
     }
-    .nav_links.active{
-        display: flex;
+
+    .nav_links a {
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        font-size: 15px;
+        width: 100%;
     }
+    /* .nav_links.active{
+        display: flex;
+    } */
 
     .hamburger{
         display: block;
-        margin-left: auto;
-        margin-right: 15px;
-        border: 3px;
-        display: flex;
-        justify-content: end;
     }
-    .darkModeBtn{
-        display: block;
-        margin-left: 300px;
-        display: flex;
-        align-items: start;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .nav_links{
+        display: flex !important;
     }
 }
 
@@ -118,15 +115,14 @@ footer{
     text-align: center;
     height: 100px;
     width: 100%;
-
 }
-footer p {
-    font-size: 16px;
- }
 
 .darkModeBtn{
     background: transparent;
     border: none;
+    cursor: pointer;
+    margin: -7px;
+    display: block;
 }
   
 .darkModeBtn img {
@@ -134,8 +130,8 @@ footer p {
     justify-content: center;
     align-items: end;
     width: 30px;
-    height: 30px;
-    margin-left: 15px;
+    height: auto;
+    margin-left: 5px;
     margin-right: 5px;
 }
 

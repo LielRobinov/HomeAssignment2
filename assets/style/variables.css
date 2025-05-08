@@ -1,4 +1,9 @@
 /* variables.css */
 :root {
   --primary-color: #ffffff;
+  --Nav_footer_BackgroundColor: #5e76a9;
+  --main_BackgroundColor: white;
+  --li_BackgroundColor: white;
+  --a_BackgroundColor: black;
+  --BG_color: rgb(243, 243, 243);
 }

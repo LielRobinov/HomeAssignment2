@@ -7,7 +7,6 @@ function toggleMenu() {
     else {
         temp.style.display = "block";
     }
-
 }
 
 function dark_mode(){
