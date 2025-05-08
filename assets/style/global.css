@@ -28,6 +28,7 @@ nav{
     align-items: center;
     justify-content:space-between ;
     height: 100px;
+    padding: 0 20px;
 }
 
 .nav_links{
@@ -64,6 +65,9 @@ nav{
     cursor: pointer;
     font-size: 25px;
 }
+.menu_icons{
+    display: flex;
+}
 
 @media only screen and (max-width: 767px){
     .nav_links{
@@ -86,7 +90,7 @@ nav{
         margin-right: 15px;
         border: 3px;
         display: flex;
-        align-items: start;
+        justify-content: end;
     }
     .darkModeBtn{
         display: block;
