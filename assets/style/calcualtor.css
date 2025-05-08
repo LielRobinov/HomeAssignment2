@@ -1,0 +1,36 @@
+@import url('variables.css');
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.section > h2{
+    color: var(--Nav_footer_BackgroundColor);
+}
+form{
+    border: 2px solid;
+    padding: 20px 50px;
+    border-radius:10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+.price, .remove{
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.price{
+    margin-bottom: 12px;
+}
+
+.price:hover,
+.remove:hover{
+    background-color: var(--Nav_footer_BackgroundColor);
+}

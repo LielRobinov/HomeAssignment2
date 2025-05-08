@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script defer src="services/global.js"></script>
+  <link rel="stylesheet" href="assets/style/global.css" type="text/css" />
+  <link rel="stylesheet" href="assets/style/calcualtor.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Quote Calculator</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <nav>
+      <img src="assets/imgs/logo3.png" alt="WebsiteLogo" class="logo" id="logo">
+
+     <div class="nav_links" id="nav_links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="project-Calculator.html" class="active">Project Calculator</a>
+      </div>
+
+    <div class="menu_icons">
+      <button id="darkModeBtn" class="darkModeBtn" onclick="dark_mode()">
+        <img src="assets/imgs/moon.png" alt="moonIcon" id="icon">
+      </button>
+
+      <a class="hamburger" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Project Calculator <i class="fa-solid fa-calculator"></i></h2>
+      <form>
+        <label for="siteType"><i class="fa fa-globe"></i> Site type: </label> <br>
+        <select id="siteType">
+          <option value="defule" disabled selected>Select option</option>
+          <option value="businesSite" >Busines site</option>
+          <option value="onlineStore">Online store</option>
+          <option value="blog">Blog</option>
+        </select> <br> <br>
+
+        <label for="pages"><i class="fa fa-file-alt"></i> Number of pages:</label> <br>
+        <select id="pages">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select> <br> <br>
+
+        <label><i class="fa fa-palette"></i> Personal design?</label> <br>
+        <input type="radio" name="group" value="no" checked>No <br>
+        <input type="radio" name="group" value="yes">Yes <br> <br>
+
+        <input class="price" type="submit" value="Calculate price"> 
+        <input class="remove" type="reset" value="Reset">
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Liel Robinov. All rights reserved.</p>
+  </footer>
 </body>
 </html>
