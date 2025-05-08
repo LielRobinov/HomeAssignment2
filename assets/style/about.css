@@ -1,3 +1,4 @@
+@import url('variables.css');
 .section{
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@
     padding: 10px 10px;
 }
 
-.section > h4{
+.section > h2{
     padding: 10px 10px;
     color: var(--Nav_footer_BackgroundColor);
 }
@@ -18,9 +19,8 @@
 .separation{
     margin-top: 20px;
     height: 2px;
-    background: linear-gradient(to right, #00b4d8, #90e0ef);
+    background: var(--separation-color);
     border: none;
     width: 100%;
     max-width: 400px;
-
 }
