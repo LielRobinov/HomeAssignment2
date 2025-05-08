@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script defer src="services/global.js"></script>
+  <link rel="stylesheet" href="assets/style/global.css" type="text/css"/>
+  <link rel="stylesheet" href="assets/style/about.css" type="text/css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header><nav>
+    <img src="assets/imgs/logo3.png" alt="WebsiteLogo" class="logo" id="logo">
+
+   <div class="nav_links" id="nav_links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="project-Calculator.html">Project Calculator</a>
+    </div>
+
+  <div class="menu_icons">
+    <button id="darkModeBtn" class="darkModeBtn" onclick="dark_mode()">
+      <img src="assets/imgs/moon.png" alt="moonIcon" id="icon">
+    </button>
+
+    <a class="hamburger" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </nav>
+ </header>
+
+<main>
+  <section class="section">
+    <h4>About me</h4>
+    <p>
+      Hi, my name is Liel Robinov, I'm 24 years old and I'm from Herzliya.
+      I'm a second-year student pursuing a Bachelor's degree in Business administration
+      with a specialization in Information Systems at the Ruppin Academic Center.
+      I chose this specialization because I've alwayes been curious about what happend
+      "behind the scenes" of computer systems and how things actually work. 
+      The specialization is very challenging, but truly worth it!
+    </p>
+    <div class="separation"></div>
+  </section>
+
+ <section class="section"> 
+    <h4>Work</h4>
+    <p>
+      Alongside my studies, I've been working for a long time at a gas company.
+      My job includes customer service, working with unique Information system,
+      using Excel at a basic level, and handling daily tasks. This experience has helped
+      me a lot - it improved my ability to work under pressure, understand business
+      processes, and communicate effectively with people.
+   </p>
+   <div class="separation"></div>
+ </section>
+
+  <section class="section"> 
+   <h4>Hobbies</h4>
+   <p>
+    In addition to work and studies, I enjoy shopping, dining out, traveling - especially to the beach, listening
+    to music, reading books from genres like thriller, romance and current affairs and cooking.
+    I believe that everyone should invest in themselves - both in their studies/work and outside of them.
+   </p>
+   <div class="separation"></div>
+  </section>
+
+  <section class="section"> 
+  <h4>The values that guide my life:</h4>
+  <p>
+  Respect - I believe that respect is one of the most important values in interpersonal relationships. 
+  Especially in my family, respect has always been a top priority. A person who does not respect their surroundings will not be able to respect themselves.
+<br>
+  Honesty and Transparency - I always strive to be open and honest with myself and with those around me, whether it's friends, family, colleagues, or classmates. 
+  I believe that honesty builds genuine connections based on trust.
+<br>
+  Helping Others - I believe that we have the power to help one another, even through small acts. 
+  A small gesture of help can be very meaningful to someone else and create a real connection.
+<br>
+  Responsibility - I believe that taking responsibility for our actions is a fundamental value. 
+  Even if I make a mistake, I take responsibility because it builds trust with others and leads to success in any field we engage in.  
+  </p>
+  <div class="separation"></div>
+  </section>
+</main>
+
+<footer>
+    <p>© 2025 Liel Robinov. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
