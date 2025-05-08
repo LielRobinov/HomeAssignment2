@@ -1,9 +1,13 @@
 /* variables.css */
 :root {
-  --primary-color: #ffffff;
-  --Nav_footer_BackgroundColor: #5e76a9;
+  /* --primary-color: #ffffff; */
+  --Nav_footer_BackgroundColor: #547792		;
   --main_BackgroundColor: white;
-  --li_BackgroundColor: white;
-  --a_BackgroundColor: black;
-  --BG_color: rgb(243, 243, 243);
+  --a_BackgroundColor: white;
+  --a_color: rgb(0, 0, 0);
+  --BG_color: rgb(232, 228, 228);
+  --SectionColor: rgb(232, 228, 228);
+  --btn_color: #547792;
+  --fontColor: white;
+  --btnHover: #879ac2 ;
 }

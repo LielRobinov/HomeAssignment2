@@ -30,19 +30,15 @@ nav{
 
 .nav_links a {
     text-decoration: none;
-    color: var(--a_BackgroundColor);
+    color: var(--a_color);   
     margin: 10px 10px;
     padding: 5px 5px;
-
 }
 
-.nav_links a:hover ,
+.nav_links a:hover,
 .nav_links a.active{
-    background-color: var(--li_BackgroundColor);
+    background-color: var(--a_BackgroundColor);
     border-radius: 5px;
-    padding: 5px 5px;
-    margin: 10px 10px;
-    width: 50px;
 }
 
 .logo {
@@ -51,7 +47,8 @@ nav{
 
 .menu_icons{
     display: flex;
-    gap: 10px
+    gap: 10px;
+    margin-right:15px ;
 }
 
 .hamburger{
@@ -80,8 +77,10 @@ nav{
         padding-bottom: 14px;
         font-size: 15px;
         width: 100%;
+        
     }
-    /* .nav_links.active{
+
+    /* .nav_links a.active{
         display: flex;
     } */
 
@@ -99,7 +98,8 @@ nav{
 
 main{
     width: 100%;
-    max-width: 620px;
+    height: auto;
+    max-width: 600px;
     border-radius: 10px;
     border-style:groove;
     margin: 120px auto ;
@@ -121,6 +121,7 @@ footer{
     background: transparent;
     border: none;
     cursor: pointer;
+    padding-right: 10px;
     margin: -7px;
     display: block;
 }
@@ -136,10 +137,10 @@ footer{
 }
 
 body.dm_colors{
-    --Nav_footer_BackgroundColor: #2C3E50;
-    --main_BackgroundColor: #1A252F;
-    --li_BackgroundColor: #34495E;
-    --a_BackgroundColor: #ECF0F1;
+    --Nav_footer_BackgroundColor: #2c3e50;
+    --main_BackgroundColor: #1a252f;
+    --li_BackgroundColor: #34495e;
+    --a_BackgroundColor: #ecf0f1;
     --BG_color: #121212;
 }
 
