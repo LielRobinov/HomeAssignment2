@@ -81,6 +81,18 @@ button:hover{
 }
 .project-info p{
     text-align: justify;
+    margin-bottom: 12px;
+}
+.project-info a{
+    color: var(--a_color);
+    font-weight: bold;
+    font-style:oblique;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.project-info a:hover{
+    text-decoration: underline;
 }
 .budapestImg{
     width: 100%;
