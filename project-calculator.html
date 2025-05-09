@@ -36,19 +36,21 @@
 
   <main>
     <section class="section">
-      <h2>Project Calculator <i class="fa-solid fa-calculator"></i></h2>
       <form>
-        <label for="siteType"><i class="fa fa-globe"></i> Site type: </label> <br>
+        <h2>Project Calculator <i class="fa-solid fa-calculator"></i></h2>
+
+        <label for="siteType"><i class="fa fa-globe"></i> Site type</label> <br>
         <select id="siteType">
-          <option value="defule" disabled selected>Select option</option>
-          <option value="businesSite" >Busines site</option>
-          <option value="onlineStore">Online store</option>
-          <option value="blog">Blog</option>
+          <option value=" " disabled selected>Select option</option>
+          <option value="Busines site" >Busines site</option>
+          <option value="Online store">Online store</option>
+          <option value="Blog">Blog</option>
         </select> <br> <br>
 
-        <label for="pages"><i class="fa fa-file-alt"></i> Number of pages:</label> <br>
+        <label for="pages"><i class="fa fa-file-alt"></i> Number of pages</label> <br>
         <select id="pages">
-          <option value="1" selected>1</option>
+          <option value=" " disabled selected>Select option</option>
+          <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
@@ -65,9 +67,19 @@
         <input type="radio" name="group"  value="yes">Yes <br> <br>
 
         <input class="price" type="submit" value="Calculate price" onclick="calculatePrice(event)"> 
-        <input class="remove" type="reset" value="Reset">
+        <input class="remove" type="reset" value="Reset" onclick="removeData()">
 
       </form>
+    </section>
+
+    <section class="section">
+      <div class="data">
+        <h4>Project details</h4>
+        <p><i class="fa fa-globe"></i> Site type:</p>
+        <p><i class="fa fa-file-alt"></i> Number of pages:</p>
+        <p><i class="fa fa-palette"></i> Personal design:</p>
+        <p class="total-p"><i class="fa-solid fa-dollar-sign"></i>Total price: </p>
+      </div>
     </section>
   </main>
 

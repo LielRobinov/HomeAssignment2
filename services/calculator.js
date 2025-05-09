@@ -2,27 +2,24 @@ function calculatePrice(event){
     event.preventDefault();
 
     const str = document.querySelector("#siteType").value ;
-    let price;
+    let totalPrice;
 
-    if (str === "businesSite"){
-        price = 1000;
+    if (str === "Busines site"){
+        totalPrice = 1000;
     }
-    else if (str === "onlineStore"){
-        price = 2000;
+    else if (str === "Online store"){
+        totalPrice = 2000;
     }
-    else if (str === "blog"){
-        price = 1500;
+    else if (str === "Blog"){
+        totalPrice = 1500;
     }
     else{
-        price = 0;
+        totalPrice = 0;
     }
-
-    console.log(price);
 
     let pages = document.querySelector("#pages").value;
     pages *= 200;
-    console.log(pages);
-    price += pages;
+    totalPrice += pages;
     
     const design = document.querySelector('input[name="group"]:checked').value;
     let designPrice;
@@ -31,9 +28,29 @@ function calculatePrice(event){
     } else{
         designPrice = 0;
     }
-    console.log(designPrice);
-    price += designPrice;
-    
-    console.log("total price: " , price);
+    totalPrice += designPrice;
 
+
+    const dataDiv = document.querySelector(".data");
+    const dataParagraphs = dataDiv.querySelectorAll('p');
+    const values = [
+        '<i class="fa fa-globe"></i> Site type: ' + str ,
+        '<i class="fa fa-file-alt"></i> Number of pages: ' + document.querySelector("#pages").value ,
+        '<i class="fa fa-palette"></i> Personal design: ' + design ,
+        '<i class="fa-solid fa-dollar-sign"></i>Total price: ' + totalPrice + '₪'
+    ];
+    
+    for (let i = 0; i < values.length; i++)
+    {
+        dataParagraphs[i].innerHTML = values[i];
+    }
+
+    dataDiv.style.display = 'flex';
+}
+
+function removeData(){
+    const dataDiv = document.querySelector(".data");
+    if (dataDiv.style.display === 'flex'){
+        dataDiv.style.display = 'none';
+    }
 }
