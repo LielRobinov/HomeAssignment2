@@ -18,15 +18,11 @@ border-radius: 10px;
     gap: 10px;
 }
 
-.text p{
-    flex-wrap:wrap;
-}
-
 .picture{
     width: 200px;
     height: auto;
     display: block;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 button{
