@@ -132,11 +132,11 @@ footer{
     margin-right: 5px;
 }
 
-body.dm_colors{
+.dm_colors{
     --Nav_footer_BackgroundColor: #2c3e50;
     --main_BackgroundColor: #1a252f;
     --li_BackgroundColor: #34495e;
-    --a_BackgroundColor: #ecf0f1;
+    --a_BackgroundColor: #516e8c;
     --BG_color: #211f1f;
 }
 
