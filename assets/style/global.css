@@ -7,7 +7,7 @@
 }
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--BG_color)
+    background-color: var(--body_color);
 }
 
 header{
@@ -30,14 +30,14 @@ nav{
 
 .nav_links a {
     text-decoration: none;
-    color: var(--a_color);   
+    color: var(--Nav_footer_color);   
     margin: 10px 10px;
     padding: 5px 5px;
 }
 
 .nav_links a:hover,
 .nav_links a.active{
-    background-color: var(--a_BackgroundColor);
+    background-color: var(--active_BackgroundColor);
     border-radius: 5px;
 }
 
@@ -56,6 +56,7 @@ nav{
     border: none;
     cursor: pointer;
     font-size: 25px;
+    color: var(--text_color);
 }
 
 @media only screen and (max-width: 767px){
@@ -111,6 +112,8 @@ footer{
     text-align: center;
     height: 100px;
     width: 100%;
+    color: var(--Nav_footer_color);   
+
 }
 
 .darkModeBtn{
@@ -135,9 +138,13 @@ footer{
 .dm_colors{
     --Nav_footer_BackgroundColor: #2c3e50;
     --main_BackgroundColor: #1a252f;
-    --li_BackgroundColor: #34495e;
-    --a_BackgroundColor: #516e8c;
-    --BG_color: #211f1f;
+    --active_BackgroundColor: #516e8c;
+    --body_color: #211f1f;
+    --Nav_footer_color: white;
+    --SectionColor: rgb(185, 185, 185);
+    --text_color: white;
+    --text_BackgroundColor: #516e8c;
+
 }
 
 

@@ -1,5 +1,10 @@
 @import url('variables.css');
-.section{
+
+body{
+    color: var(--text_color);
+}
+
+section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,13 +12,44 @@
     margin-bottom: 20px;
 }
 
-.section > p{
+section > p{
     padding: 10px 10px;
 }
 
-.section > h2{
-    padding: 10px 10px;
-    color: var(--Nav_footer_BackgroundColor);
+.about > h2{
+    background-color: var(--text_BackgroundColor);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+}
+
+.work > h2{
+    background-color: var(--text_BackgroundColor);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 115px;
+}
+
+.hobbies > h2{
+    background-color: var(--text_BackgroundColor);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 145px;
+}
+
+.values > h2{
+    background-color: var(--text_BackgroundColor);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 380px;
 }
 
 .separation{

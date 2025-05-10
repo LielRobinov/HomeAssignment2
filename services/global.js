@@ -18,15 +18,11 @@ function dark_mode(){
     {
         icon.src="assets/imgs/sun.png";
         icon.alt="sunIcon";
-        // webLogo.src="assets/imgs/whiteLogo.png";
-        // webLogo.alt="whiteLogo";
         sessionStorage.setItem("darkMode" , "enabled");
     }
     else{
         icon.src ="assets/imgs/moon.png";
         icon.alt="WebsiteWhiteLogo";
-        // webLogo.src="assets/imgs/logo3.png";
-        // webLogo.alt="WebsiteLogo";
         sessionStorage.setItem("darkMode" , "disabled");
     }
 }
@@ -39,6 +35,4 @@ if (sessionStorage.getItem("darkMode") === "enabled") {
 
     icon.src="assets/imgs/sun.png";
     icon.alt="sunIcon";
-    // webLogo.src="assets/imgs/whiteLogo.png";
-    // webLogo.alt="whiteLogo";
 }

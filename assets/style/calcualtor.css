@@ -6,11 +6,13 @@
     justify-content: center;
     align-items: center;
     gap:15px;
+    flex-wrap: wrap;
 }
 form > h2{
     margin-bottom: 10px;
 }
 form{
+    background-color: var(--SectionColor);
     border: 2px solid;
     padding: 20px 50px;
     border-radius:10px;
@@ -50,7 +52,7 @@ form > select{
 }
 
 .data{
-    background-color: var(--BG_color);
+    background-color: var(--SectionColor);
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(86, 86, 86, 0.7);
     width: 70%;

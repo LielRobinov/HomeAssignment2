@@ -3,10 +3,13 @@
   /* --primary-color: #ffffff; */
   --Nav_footer_BackgroundColor: #547792		;
   --main_BackgroundColor: white;
-  --a_BackgroundColor: white;
-  --a_color: rgb(0, 0, 0);
-  --BG_color: rgb(232, 228, 228);
+  --active_BackgroundColor: rgb(255, 255, 255);
+  --Nav_footer_color: rgb(0, 0, 0);
+  --body_color: rgb(232, 228, 228);
+  --a_color: black;
   --SectionColor: rgb(232, 228, 228);
+  --text_color: black;
+  --text_BackgroundColor: none;
   --btn_color: #547792;
   --fontColor: white;
   --btnHover: #879ac2 ;
