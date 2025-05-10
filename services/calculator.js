@@ -4,7 +4,7 @@ function calculatePrice(event){
     const str = document.querySelector("#siteType").value ;
     let totalPrice;
 
-    if (str === "Busines"){
+    if (str === "Business"){
         totalPrice = 1000;
     }
     else if (str === "Online store"){
