@@ -1,7 +1,7 @@
 /* variables.css */
 :root {
   /* --primary-color: #ffffff; */
-  --Nav_footer_BackgroundColor: #547792		;
+  --Nav_footer_BackgroundColor: #547792;
   --main_BackgroundColor: white;
   --active_BackgroundColor: rgb(255, 255, 255);
   --Nav_footer_color: rgb(0, 0, 0);
@@ -12,10 +12,11 @@
   --text_BackgroundColor: none;
   --btn_BackgroundColor: #547792;
   --btn_color: white;
-  --btnHover: #879ac2 ;
+  --btnHover: #697693 ;
   --separation-color: linear-gradient(to right, #3a4795, #334ddd);
   --reset_btn: rgb(228, 123, 123);
   --submit_btn: rgb(121, 193, 143);
   --totalPrice_BackgroundColor: rgb(255, 255, 255);
   --data_boxShadow: 0 4px 12px rgba(86, 86, 86, 0.7);
+  --form_boxShadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
