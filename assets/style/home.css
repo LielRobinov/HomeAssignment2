@@ -22,13 +22,12 @@ border-radius: 10px;
     width: 200px;
     height: auto;
     display: block;
-    /* margin-left: auto; */
 }
 
 button{
 padding: 5px;
-color:var(--fontColor);
-background-color: var(--btn_color);
+color:var(--btn_color);
+background-color: var(--btn_BackgroundColor);
 border-radius: 5px;
 font-weight: bold;
 }

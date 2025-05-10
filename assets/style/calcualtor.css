@@ -54,7 +54,7 @@ form > select{
 .data{
     background-color: var(--SectionColor);
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(86, 86, 86, 0.7);
+    box-shadow: var(--data_boxShadow);
     width: 70%;
     height: auto;
     margin-top: 10px;
@@ -65,7 +65,7 @@ form > select{
     display: none;
 }
 .data > h4{
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .data > p{
@@ -76,10 +76,12 @@ form > select{
     margin-bottom: 5px;
 }
 
-.total-p{
+.total-price{
     justify-content: center;
     font-weight: bold;
     margin-top: 10px;
-    background-color: white;
+    background-color: var(--totalPrice_BackgroundColor);
     border-radius: 5px;
+    padding: 5px;
+    width: 100%;
 }

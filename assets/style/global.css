@@ -68,8 +68,7 @@ nav{
         top:100px ;
         right:0px;
         padding: 10px;
-        border-radius: 2px;
-        border: 1px solid;
+        height: 100%;
     }
 
     .nav_links a {
@@ -78,7 +77,6 @@ nav{
         padding-bottom: 14px;
         font-size: 15px;
         width: 100%;
-        
     }
 
     .hamburger{
