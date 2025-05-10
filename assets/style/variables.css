@@ -19,4 +19,5 @@
   --totalPrice_BackgroundColor: rgb(255, 255, 255);
   --data_boxShadow: 0 4px 12px rgba(86, 86, 86, 0.7);
   --form_boxShadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --form_border: 1.5px solid;
 }
