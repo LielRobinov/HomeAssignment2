@@ -14,9 +14,10 @@ form > h2{
 form{
     background-color: var(--SectionColor);
     border: var(--form_border);
-    padding: 20px 50px;
+    padding: 30px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     box-shadow:var(--form_boxShadow);
     width: 100%;
     max-width: 340px;
@@ -62,14 +63,15 @@ form > select{
     width: 70%;
     height: auto;
     margin-top: 10px;
-    padding: 10px 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     display: none;
 }
 .data > h4{
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 .data > p{

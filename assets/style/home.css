@@ -63,6 +63,11 @@ button:hover{
     text-decoration: none;
     color: var(--a_color);
 }
+
+.contact-info a i {
+    margin-right: 8px;
+}
+
 .project-info {
     display: flex;
     justify-content: center;
@@ -83,6 +88,10 @@ button:hover{
     font-style:oblique;
     text-decoration: none;
     margin-bottom: 5px;
+    background-color: var( --Nav_footer_BackgroundColor);
+    border-radius: 4px;
+    padding: 5px 5px;
+    /* color:var(--btn_color); */
 }
 
 .project-info a:hover{
@@ -94,6 +103,11 @@ button:hover{
     height: auto;
     margin-bottom: 12px;
     border-radius: 15px;
+    transition:transform 0.3s ease;
+}
+
+.budapestImg:hover{
+transform: scale(1.03);
 }
 
 @media only screen and (max-width:767px){
