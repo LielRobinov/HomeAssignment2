@@ -30,6 +30,7 @@ button{
  color:var(--btn_color);
  background-color: var(--btn_BackgroundColor);
  border-radius: 5px;
+ margin-bottom: 10px;
  font-weight: bold;
 }
 
@@ -75,28 +76,20 @@ button:hover{
     align-items: center;
     flex-direction: column;
 }
+
 .project-info h2{
     margin-bottom: 12px;
 }
+
 .project-info p{
     text-align: justify;
     margin-bottom: 12px;
-}
-.project-info a{
-    color: var(--a_color);
-    font-weight: bold;
-    font-style:oblique;
-    text-decoration: none;
-    margin-bottom: 5px;
-    background-color: var( --Nav_footer_BackgroundColor);
-    border-radius: 4px;
-    padding: 5px 5px;
-    /* color:var(--btn_color); */
 }
 
 .project-info a:hover{
     text-decoration: underline;
 }
+
 .budapestImg{
     width: 100%;
     max-width: 300px;
@@ -107,7 +100,7 @@ button:hover{
 }
 
 .budapestImg:hover{
-transform: scale(1.01);
+ transform: scale(1.01);
 }
 
 @media only screen and (max-width:767px){
