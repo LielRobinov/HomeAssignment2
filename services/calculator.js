@@ -4,6 +4,7 @@ function calculatePrice(event){
     const str = document.querySelector("#siteType").value ;
     let totalPrice;
 
+    //בדיקה של סוג האתר ומתן מחיר
     if (str === "Business"){
         totalPrice = 1000;
     }
@@ -17,10 +18,18 @@ function calculatePrice(event){
         totalPrice = 0;
     }
 
-    let pages = document.querySelector("#pages").value;
-    pages *= 200;
+    //חישוב הוספת מחיר על עמודים
+    let pages = parseInt(document.querySelector("#pages").value);
+    if (pages === 1)
+    {
+        pages = 0;
+    } 
+    else{
+        pages = (pages - 1) * 200;
+    }
     totalPrice += pages;
     
+    //חישוב הוספת מחיר על העיצוב 
     const design = document.querySelector('input[name="group"]:checked').value;
     let designPrice;
     if(design === "yes"){
@@ -31,6 +40,7 @@ function calculatePrice(event){
     totalPrice += designPrice;
 
 
+    //הוספת פרטי הפרויקט שנבחר על ידי המשתמש
     const dataDiv = document.querySelector(".data");
     const dataParagraphs = dataDiv.querySelectorAll('p');
     const values = [

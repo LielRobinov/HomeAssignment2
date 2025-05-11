@@ -1,12 +1,12 @@
 @import url('variables.css');
 
-.hero_section{
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 10px;
-background-color: var(--SectionColor) ;
-border-radius: 10px;
+.hero_section {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+ background-color: var(--SectionColor) ;
+ border-radius: 10px;
 }
 
 .text{
@@ -26,11 +26,11 @@ border-radius: 10px;
 }
 
 button{
-padding: 5px;
-color:var(--btn_color);
-background-color: var(--btn_BackgroundColor);
-border-radius: 5px;
-font-weight: bold;
+ padding: 5px;
+ color:var(--btn_color);
+ background-color: var(--btn_BackgroundColor);
+ border-radius: 5px;
+ font-weight: bold;
 }
 
 button:hover{
@@ -107,7 +107,7 @@ button:hover{
 }
 
 .budapestImg:hover{
-transform: scale(1.03);
+transform: scale(1.01);
 }
 
 @media only screen and (max-width:767px){
