@@ -39,7 +39,7 @@
       <form>
         <h2>Project Calculator <i class="fa-solid fa-calculator"></i></h2>
 
-        <label for="siteType"><i class="fa fa-globe"></i> Site type</label> <br>
+        <label><i class="fa fa-globe"></i> Site type</label> <br>
         <select id="siteType">
           <option value="" disabled selected>Select option</option>
           <option value="Business">Business</option>
@@ -47,7 +47,7 @@
           <option value="Blog">Blog</option>
         </select> <br> <br>
 
-        <label for="pages"><i class="fa fa-file-alt"></i> Number of pages</label> <br>
+        <label><i class="fa fa-file-alt"></i> Number of pages</label> <br>
         <select id="pages">
           <option value="" disabled selected>Select option</option>
           <option value="1">1</option>
@@ -62,11 +62,11 @@
           <option value="10">10</option>
         </select> <br> <br>
 
-        <label for="design"><i class="fa fa-palette"></i> Personal design?</label> <br>
-        <input type="radio" name="group" id="design" value="no" checked>No <br>
+        <label><i class="fa fa-palette"></i> Personal design?</label> <br>
+        <input type="radio" name="group"  value="no" checked>No <br>
         <input type="radio" name="group"  value="yes">Yes <br> <br>
 
-        <input class="price" type="submit" value="Calculate price" onclick="calculatePrice(event)"> 
+        <input class="price" type="button" value="Calculate price" onclick="calculatePrice()"> 
         <input class="remove" type="reset" value="Reset" onclick="removeData()">
 
       </form>

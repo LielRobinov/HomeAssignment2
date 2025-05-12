@@ -1,5 +1,4 @@
-function calculatePrice(event){
-    event.preventDefault();
+function calculatePrice(){
 
     const str = document.querySelector("#siteType").value ;
     let totalPrice = 0;
