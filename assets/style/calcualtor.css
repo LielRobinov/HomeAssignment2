@@ -10,7 +10,10 @@
 }
 form > h2{
     margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
 }
+
 form{
     background-color: var(--SectionColor);
     border: var(--form_border);

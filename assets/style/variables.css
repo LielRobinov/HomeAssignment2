@@ -33,5 +33,7 @@ body.darkMode_colors{
   --text_color: white;
   --text_BackgroundColor: #516e8c;
   --btn_BackgroundColor: #2c3e50;
+  --form_boxShadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+  --data_boxShadow: 0 4px 12px rgba(201, 197, 197, 0.4);
 }
 
