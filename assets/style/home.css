@@ -22,11 +22,11 @@
 }
 
 .text h1{
-    margin-bottom: 5px;
+ margin-bottom: 5px;
 }
 
 .text .btn{
-margin-top: 5px;
+ margin-top: 5px;
 }
 .picture{
     width: 100%;
@@ -52,12 +52,12 @@ margin-top: 5px;
 }
 
 .btn:hover{
-    background-color:var(--btnHover) ;
+  background-color:var(--btnHover) ;
 }
  
 .project-info > a {
-     width: 50%;
-     max-width: 140px;
+ width: 50%;
+ max-width: 140px;
 }
 
 .CallToAction{

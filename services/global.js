@@ -22,7 +22,7 @@ function dark_mode(){
     }
     else{
         icon.src ="assets/imgs/moon.png";
-        icon.alt="WebsiteWhiteLogo";
+        icon.alt="moonIcon";
     }
 }
 
