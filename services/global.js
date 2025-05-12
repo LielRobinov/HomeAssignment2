@@ -13,7 +13,7 @@ function toggleMenu() {
 
 function dark_mode(){
     const icon = document.querySelector("#icon");
-    const isDark = document.documentElement.classList.toggle("darkMode_colors");
+    const isDark = document.body.classList.toggle("darkMode_colors");
 
     if(isDark)
     {
