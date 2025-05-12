@@ -2,7 +2,7 @@ function calculatePrice(event){
     event.preventDefault();
 
     const str = document.querySelector("#siteType").value ;
-    let totalPrice;
+    let totalPrice = 0;
 
     //בדיקה של סוג האתר ומתן מחיר
     if (str === "Business"){
@@ -14,18 +14,15 @@ function calculatePrice(event){
     else if (str === "Blog"){
         totalPrice = 1500;
     }
-    else{
-        totalPrice = 0;
-    }
 
     //חישוב הוספת מחיר על עמודים
     let pages = parseInt(document.querySelector("#pages").value);
-    if (pages === 1)
+    if(isNaN(pages) || pages <= 1)
     {
-        pages = 0;
-    } 
+      pages = 0;
+    }
     else{
-        pages = (pages - 1) * 200;
+      pages = (pages - 1) * 200;
     }
     totalPrice += pages;
     
