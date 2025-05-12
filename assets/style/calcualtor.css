@@ -63,8 +63,9 @@ form > select{
     background-color: var(--SectionColor);
     border-radius: 5px;
     box-shadow: var(--data_boxShadow);
-    width: 70%;
+    width: 100%;
     height: auto;
+    max-width: 380px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
